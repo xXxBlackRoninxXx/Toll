@@ -3,12 +3,14 @@
     <v-toolbar-side-icon color="white"></v-toolbar-side-icon>
     <v-toolbar-title class="blue--text">Какой-то сайт</v-toolbar-title>
       <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
+    <div class="hidden-sm-and-down">
       <v-btn color="blue">
         <v-icon color="white">build</v-icon>
       </v-btn>
       <v-btn flat></v-btn>
+      <router-link to="/login">
       <v-btn color="blue" class="white--text">Logine</v-btn>
-    </v-toolbar-items>
+      </router-link>
+    </div>
   </v-toolbar>
 </template>
