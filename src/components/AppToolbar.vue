@@ -9,7 +9,7 @@
       <v-btn color="blue">
         <v-icon color="white">build</v-icon>
       </v-btn>
-      <router-link to="/contact">
+      <router-link to="/contact" class="link">
       <v-btn color="blue" class="white--text">Контакты</v-btn>
       </router-link>
       <router-link to="/login">
@@ -63,3 +63,9 @@
     }
   }
 </script>
+
+<style>
+  .link :active{
+    text-decoration: none !important;
+  }
+</style>
