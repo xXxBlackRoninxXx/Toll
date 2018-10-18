@@ -9,8 +9,8 @@
     ></v-text-field>
 
     <v-text-field
-      v-model="Password"
-      :rules="Password"
+      v-model="password"
+      :rules="password"
       :counter="10"
       label="Пароль"
       type="password"
@@ -27,12 +27,12 @@
         data(){
           return{
             email:null,
-            password:null
+            password:null,
           }
         },
       methods:{
           submit(){
-            console.log('hello')
+            console.log(`Email is ${this.email} and Password is ${this.password}`)
           }
       }
     }
