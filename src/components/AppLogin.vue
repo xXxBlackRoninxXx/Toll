@@ -1,5 +1,8 @@
 <template>
   <v-container>
+    <v-alert  :value="alert" color="blue" type="warning">
+      Действующий Email и пароль
+    </v-alert>
   <v-form @submit.prevent="submit">
 
     <v-text-field
@@ -28,10 +31,14 @@
           return{
             email:null,
             password:null,
+            alert:false,
           }
         },
       methods:{
           submit(){
+            if(!this.email && !this.password){
+              this.alert=true
+            }
             console.log(`Email is ${this.email} and Password is ${this.password}`)
           }
       }

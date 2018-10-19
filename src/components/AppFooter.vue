@@ -1,8 +1,8 @@
 <template>
   <v-footer dark height="auto" fixed>
     <v-card class="flex" flat tile>
-      <v-card-title class="teal">
-        <strong class="subheading">Get connected with us on social networks!</strong>
+      <v-card-text class="text-md-center">
+        <strong class="subheading">Не проходи мимо! Кинь донатик! Поддержи енотиков))) Ну побратски.</strong>
         <v-spacer></v-spacer>
 
         <v-btn
@@ -14,7 +14,7 @@
         >
           <v-icon size="24px">{{ icon }}</v-icon>
         </v-btn>
-      </v-card-title>
+      </v-card-text>
 
       <v-card-actions class="grey darken-3 justify-center">
         &copy;2018 — <strong>Vuetify</strong>

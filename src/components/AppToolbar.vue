@@ -2,9 +2,13 @@
   <v-toolbar color="grey darken-3">
     <v-toolbar-side-icon color="white" @click.stop="drawer = !drawer"></v-toolbar-side-icon>
     <router-link to="/">
-       <v-toolbar-title class="blue--text">Какой-то сайт</v-toolbar-title>
+       <v-toolbar-title class="blue--text">Енотов.Net</v-toolbar-title>
     </router-link>
       <v-spacer></v-spacer>
+          <v-badge left>
+            <span slot="badge">0</span>
+              <v-icon large color="lime accent-3"> account_box </v-icon>
+          </v-badge>
     <div class="hidden-sm-and-down">
       <v-btn color="blue">
         <v-icon color="white">build</v-icon>
