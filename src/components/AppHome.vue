@@ -1,7 +1,7 @@
 <template>
   <container>
-  <v-carousel>
-    <v-carousel-item
+  <v-carousel >
+    <v-carousel-item height="700"
       v-for="(item,i) in items"
       :key="i"
       :src="item.src"
@@ -9,7 +9,7 @@
   </v-carousel>
 
       <div>
-
+      <router-view name="about"/>
 
       </div>
 
@@ -42,6 +42,5 @@
 </script>
 
 <style>
-
 
 </style>

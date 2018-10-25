@@ -3,8 +3,9 @@ import Router from 'vue-router'
 import AppHome from '@/components/AppHome'
 import AppLogin from '@/components/AppLogin'
 import AppContact from '@/components/AppContact'
+import AppThumb from '@/components/AppThumb'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   routes: [
@@ -22,6 +23,11 @@ export default new Router({
       path: '/contact',
       name: 'AppContact',
       component: AppContact
-    }
+    },
+    {
+      path: '/thumb',
+      name: 'AppThumb',
+      component: AppThumb
+    },
     ]
 })

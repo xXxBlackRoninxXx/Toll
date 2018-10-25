@@ -21,8 +21,9 @@
         </v-card-text>
 
         <v-card-actions>
-          <v-btn flat color="blue darken-4">Поделиться</v-btn>
-          <v-btn flat color="blue darken-4">Изучить</v-btn>
+          <div class = "Absolute-Center" >
+            <v-btn flat    class="blue--text"  href="https://rb.asu.ru">Изучить</v-btn>
+          </div>
         </v-card-actions>
       </v-card>
     </v-flex>
@@ -36,5 +37,9 @@
 </script>
 
 <style scoped>
-
+  .Absolute-Center
+  {
+    width: 100%;
+    text-align: center;
+  }
 </style>

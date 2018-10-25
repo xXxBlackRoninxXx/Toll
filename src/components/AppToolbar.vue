@@ -10,9 +10,11 @@
               <v-icon large color="lime accent-3"> account_box </v-icon>
           </v-badge>
     <div class="hidden-sm-and-down">
+      <router-link to="/thumb" class="link">
       <v-btn color="blue">
-        <v-icon color="white">build</v-icon>
+        <v-icon color="white">thumb_up</v-icon>
       </v-btn>
+      </router-link>
       <router-link to="/contact" class="link">
       <v-btn color="blue" class="white--text">Контакты</v-btn>
       </router-link>
@@ -61,7 +63,8 @@
         drawer: null,
         items: [
           {title: 'Home', icon: 'dashboard'},
-          {title: 'About', icon: 'question_answer'}
+          {title: 'About', icon: 'question_answer'},
+          {title: 'Thumb', icon: 'thumb_up'},
         ]
       }
     }
