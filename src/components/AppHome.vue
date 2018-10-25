@@ -1,7 +1,7 @@
 <template>
   <container>
   <v-carousel >
-    <v-carousel-item height="700"
+    <v-carousel-item
       v-for="(item,i) in items"
       :key="i"
       :src="item.src"
